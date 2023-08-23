@@ -29,6 +29,7 @@ RUN addgroup -S pptruser && adduser -S -G pptruser pptruser \
 # Run everything after as non-privileged user.
 USER pptruser
 
+CMD HOME=/root 
 RUN npm install
 RUN npm run build
 ARG PUBLIC_URL
