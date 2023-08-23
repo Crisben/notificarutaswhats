@@ -33,4 +33,5 @@ RUN npm install
 RUN npm run build
 ARG PUBLIC_URL
 ARG PORT
+EXPOSE 3001
 CMD ["npm", "start"]
